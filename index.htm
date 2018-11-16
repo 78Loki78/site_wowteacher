@@ -20,6 +20,99 @@
    <link rel="stylesheet" type="text/css" href="css/index.css">
    </head>
    <body>
+   <!--no work>
+    <script type="text/javascript">var cup;
+var rot;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  colorMode(HSB);
+  rot=PI/70;
+  cup=new Cup(width/2, height/2, (width+height)/12, (width+height)/200,500);
+}
+
+function draw() {
+  background(60);
+  cup.show(rot);
+  if(rot>0.01){
+    rot*=0.999;
+  }
+}
+
+function Cup(x,y,r,t,n){
+  var bubbles=[];
+  for(var i=0; i<n; i++){
+    bubbles.push(new Bubble(r));
+  }
+  
+  this.show=function(rot){
+    push();
+    translate(x,y);
+    rotate(-PI/5);
+    noStroke();
+    fill(20,80,20);
+    rect(r,-r*0.2, r, r*0.4, r*0.1);
+    ellipse(0,0,(r*1.2+t)*2);
+    fill(20,10,100);
+    ellipse(0,0,r*1.2*2);
+    fill(20,20,100);
+    ellipse(0,0,(r*1.2-t)*2);
+    fill(20,70,15);
+    ellipse(0,0,r*2);
+    for(var i=bubbles.length-1; i>=0; i--){
+      bubbles[i].show(rot);
+      if(!bubbles[i].run()){
+        bubbles.splice(i,1);
+      }
+    }
+    pop();
+  };
+}
+
+function Bubble(r){
+  var s=random(1,30)*r/2000;
+  if(random(10)<3){
+    s*=2;
+  }
+  if(random(10)<1){
+    s*=2;
+  }
+  var rB=random(0,r-s);
+  if(random(10)<3){
+    rB=r-s;
+  }
+  if(random(10)<3){
+    rB=rB/3+r*0.6;
+  }
+  if(random(10)<3){
+    rB/=3;
+  }
+  var ttl=random(20,1000);
+  var forever=random(100)<25;
+  var a=random(TWO_PI);
+  var rotSlow=(r-s-rB)<(r-s)*0.2 ? (r-s-rB)/((r-s)*0.2) :1;
+  
+  this.show=function(rot){
+    push();
+    rotate(a);
+    stroke(20,30,80,0.8);
+    strokeWeight(r*0.015);
+    fill(20,80,20,0.8);
+    ellipse(0,rB,s*2);
+    pop();
+    a+=rotSlow * rot*rB/r;
+  };
+  
+  this.run=function(){
+    if(!forever){
+      ttl--;
+    }
+    return ttl>0;
+  }
+}</script> <!--end >
+
+
+
     <nav class="navbar navbar-default">
      <div class="navbar-header">
       <a href="#" class="navbar-brand" style='padding:0'>
@@ -45,7 +138,7 @@
   
 <a name="home"></a>
 
-      
+ 
   <div id="myslider" class="carousel slide" data-ride="carousel">
      <ol class="carousel-indicators">
         <li class="active" data-target="#myslider" data-slide-to="0" > </li>
@@ -167,7 +260,7 @@
    <div class="fulltext">
     <a name="abissin"></a>
      <div class="box">
-     <img src="img/abissin1.jpg"  class="pull-left" alt="abissin" > <img src="img/abissin2.jpg"  class="pull-right" alt="abissin" >
+     <img src="img/abissin1.jpg"  class="pull-left "" alt="abissin" > <img src="img/abissin2.jpg"  class="pull-right " alt="abissin" >
        Шерсть короткая, тонкая, плотно прилегает к коже. Окрас разнообразный, но чаще встречается красно-коричневый с черным или темно-коричневым типпингом, темно-красный, голубой, бежево-желтый. Предпочтительно, чтобы отдельные волоски были двух- или даже трехцветными. Четкие полосы, кольца и белые отметины не допускаются (кроме подбородка). Голова небольшая, клиновидной формы, с сильным подбородком. Нос прямой, средней длины. Переход от лба к морде слабо заметен (без «стопа»). Уши сравнительно крупные, вертикально поставленные, с широким основанием и закругленными концами с кисточкой волос. Брови темные. Глаза большие, выразительные, миндалевидные, обычно зеленые, желтые или цвета лесного ореха. Селекционеры утверждают, что цвет глаз у этих животных меняется в зависимости от физического и нервного состояния. Тело крепкое, мускулистое, гибкое, подобранное. Шея короткая, изящная, элегантно изогнутая. Спина мощная, развитая, грудь широкая и достаточно глубокая. Ноги жилистые, крепкие, средние или длинные. Лапы маленькие, овальные. Животное стоит как бы «на цыпочках». Хвост относительно длинный, суживающийся от основания к концу.   <a href="#home">           Назад         </a>
       </div>
       <div class="box">
