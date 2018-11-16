@@ -1,0 +1,372 @@
+
+
+  <!DOCTYPE html>
+  <meta charset="UTF-8">
+  <html>
+  <head>
+   <title> mypage </title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme                    маленький -xs  sm  md  lg  - большой                 class='col-lg-4'   на 4 колонки большого экрана     --               >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  
+
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   </head>
+   <body>
+    <nav class="navbar navbar-default">
+     <div class="navbar-header">
+      <a href="#" class="navbar-brand" style='padding:0'>
+         <img src="img/logo.png" alt="logo" style="height: 100%">
+      </a> 
+     </div>
+      <ul class='navbar-nav nav'>
+        <li class='active'> <a href="index.htm">Главная</a></li>
+        <li> <a href="about.htm">О нас</a></li>
+        <li> <a href="cats.htm">Товары</a></li>
+      </ul>
+      <form action="post" class="navbar-form navbar-right">
+            <div class="form-group">
+              <div class="input-group">
+                 <input type="text" placeholder="fined" class="form-control"> 
+                 <div class="input-group-btn">
+                    <button class='btn btn-primary'> <i class="glyphicon glyphicon-search"></i></button>
+                 </div>
+              </div>
+        </div>
+      </form>
+    </nav>  
+  
+<a name="home"></a>
+
+      
+  <div id="myslider" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+        <li class="active" data-target="#myslider" data-slide-to="0" > </li>
+        <li data-target="#myslider" data-slide-to="1"></li>
+        <li data-target="#myslider" data-slide-to="2"> </li>
+        <li data-target="#myslider" data-slide-to="3"> </li> 
+     </ol>        
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slider1.jpg" alt="First slide" class="img-responsive center-block zoomdown">
+      <div class="carousel.caption">
+              <p class="text-center"> Прикольне фото</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/slider2.jpg" alt="Second slide" class="img-responsive center-block zoomdown">
+      <div class="carousel.caption">
+              <p class="text-center"> Прикольне фото</p>
+      </div>
+    </div>
+    <div class="item">
+      <img  src="img/slider3.jpg" alt="Third slide" class="img-responsive center-block zoomdown">
+      <div class="carousel.caption">
+              <p class="text-center"> Прикольне фото</p>
+      </div>
+    </div>
+    <div class="item">
+      <img  src="img/slider4.jpg" alt="Third slide" class="img-responsive center-block zoomdown">
+      <div class="carousel.caption">
+              <p class="text-center"> Прикольне фото</p>
+      </div>
+    </div>
+  </div>
+  <a href="#myslider" class="left carousel-control" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+  </a>  
+  <a href="#myslider" class="right carousel-control" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span> 
+  </a>
+
+</div>
+
+
+
+  <section class="content"> 
+  <div class="row"> 
+  <article class='col-lg-3 col-md-4' >
+      <div class="img_article"> 
+        <img class="img-rounded zoomleft" src="img/abissin.jpg" alt="abissin" >
+      </div>
+      <div>
+        <p class="zag">Гималаи, Персидский колорпойнт</p>
+        <p> <b>Время появления:</b> XIX век</p>
+        <p> <b>Вес:</b>от 4 кг до 7, 5 кг.</p>   
+        <p> <b>Классификация согласно FIFe:</b> Короткошерстные<p>
+      </div>
+       <div>
+        <a href="#abissin">
+         <button class="btn btn-warning " style='background-color: green'>   Подробнее  </button>
+        </a>
+      </div>
+
+    </article>
+
+    <article class='col-lg-3 col-md-4'>
+      <div class="img_article"> 
+        <img class="img-rounded  zoom" src="img/bobteil.jpg" alt="bobteil">
+      </div>
+      <div>
+        <p class="zag">Карельский Бобтейл Длинношерстный</p>
+        <p> <b>Время появления:</b> XX век</p>
+        <p> <b>Вес:</b>от 2 кг до 4 кг.</p>   
+        <p> <b>Классификация согласно FIFe:</b> Короткошерстные<p>
+      </div>
+       <div>
+        <a href="#bobteil">
+         <button class="btn btn-warning pull-right" style='background-color: green'>   Подробнее  </button>
+        </a>
+      </div>
+    </article>
+
+    <article class='col-lg-3 col-md-4'>
+      <div class="img_article"> 
+        <img class="img-rounded zoom" src="img/britain.jpg" alt="britain">
+      </div>
+      <div>
+        <p class="zag">Гималаи, Персидский колорпойнт</p>
+        <p> <b>Время появления:</b> XIX век</p>
+        <p> <b>Вес:</b>от 3 кг до 7 кг.</p>   
+        <p> <b>Классификация согласно FIFe:</b> Короткошерстные<p>
+      </div>
+       <div>
+        <a href="#britain">
+         <button class="btn btn-warning pull-right" style='background-color: green'>   Подробнее  </button>
+        </a>
+      </div>
+    </article>
+    <article class='col-lg-3 col-md-4'>
+      <div class="img_article"> 
+        <img class="img-rounded zoom" src="img/pers.jpg" alt="pers">
+      </div>
+      <div>
+        <p class="zag">Гималаи, Персидский колорпойнт</p>
+        <p> <b>Время появления:</b> XIX век</p>
+        <p> <b>Вес:</b>от 2 кг до 4 кг.</p>   
+        <p> <b>Классификация согласно FIFe:</b> Длинношерстные<p>
+      </div>
+       <div>
+        <a href="#pers">
+         <button class="btn btn-warning pull-right" style='background-color: green'>   Подробнее  </button>
+        </a>
+      </div>
+    </article>
+    
+
+   
+    
+  </div>
+   <div class="fulltext">
+    <a name="abissin"></a>
+     <div class="box">
+     <img src="img/abissin1.jpg"  class="pull-left" alt="abissin" > <img src="img/abissin2.jpg"  class="pull-right" alt="abissin" >
+       Шерсть короткая, тонкая, плотно прилегает к коже. Окрас разнообразный, но чаще встречается красно-коричневый с черным или темно-коричневым типпингом, темно-красный, голубой, бежево-желтый. Предпочтительно, чтобы отдельные волоски были двух- или даже трехцветными. Четкие полосы, кольца и белые отметины не допускаются (кроме подбородка). Голова небольшая, клиновидной формы, с сильным подбородком. Нос прямой, средней длины. Переход от лба к морде слабо заметен (без «стопа»). Уши сравнительно крупные, вертикально поставленные, с широким основанием и закругленными концами с кисточкой волос. Брови темные. Глаза большие, выразительные, миндалевидные, обычно зеленые, желтые или цвета лесного ореха. Селекционеры утверждают, что цвет глаз у этих животных меняется в зависимости от физического и нервного состояния. Тело крепкое, мускулистое, гибкое, подобранное. Шея короткая, изящная, элегантно изогнутая. Спина мощная, развитая, грудь широкая и достаточно глубокая. Ноги жилистые, крепкие, средние или длинные. Лапы маленькие, овальные. Животное стоит как бы «на цыпочках». Хвост относительно длинный, суживающийся от основания к концу.   <a href="#home">           Назад         </a>
+      </div>
+      <div class="box">
+       <a name="bobteil"></a>
+       <img src="img/bobteil1.jpg"  class="pull-left" alt="bobteil" > <img src="img/bobteil2.jpg"  class="pull-right" alt="bobteil" >
+       Сильная кошка среднего размера, гармонично сложенная, квадратного формата, с выраженной мускулатурой, движения элегантные и красивые. Круп приподнят, задние конечности длиннее передних, хвост-помпон, покрыт удлиненной шерстью. Голова небольшого размера, треугольная, с плоским лбом и высокими скулами, выделяются подушечки под усами. Глаза овальные, косо поставленные, среднего размера. Цвет глаз должен соответствовать окрасу, может быть зеленым или желтым всевозможных оттенков. Уши высоко поставленные, крупного или среднего размера. Конечности крепкие с округлыми лапами. Шерсть средней длины, упругая и блестящая. Окрас допустим любой: мраморный, пятнистый, табби, тигровый и др., кроме окраса колор-поинт и абиссинского
+       <a href="#home">           Назад         </a>
+      </div>
+      <div class="box">
+       <a name="britain"></a>
+       <img src="img/britain1.jpg"  class="pull-left" alt="britain" > <img src="img/britain2.jpg"  class="pull-right" alt="britain" >
+       Тело мощное и мускулистое. Грудная клетка широкая и круглая.Конечности крепкие, немного коротковатые по сравнению с габаритами тела. Лапы достаточно крупные, круглые по форме, пальцы сомкнуты. Хвост толстый в основании, к концу слегка сужается. Голова средней величины, широкая и массивная, имеет округлые очертания. Лоб выпуклый, между ушами можно заметить плоскую площадку. Щеки полные, особенно у самцов. Нос массивный, короткий, прямой и широкий. Уши средние по размеру, с закругленными кончиками, в основании достаточно широкие, и расставлены широко. Глаза большие, широко поставленные. По форме круглые и очень выразительные. Цвет глаз должен сочетаться с окрасом кошки и быть достаточно интенсивным. Шея короткая и толстая, особенно у самцов. Шерсть у британцев очень плотная, жесткая на ощупь. Очень хорошо выражен подшерсток. Шерсть короткая, по длине и густоте равномерная по всему телу. Шерсть британца кажется плюшевой из-за того, что она не прилегает к телу, она не требуется какого-то особого ухода.
+       <a href="#home">           Назад         </a>
+      </div>
+      <div class="box">
+      <a name="pers"></a>
+       <img src="img/pers1.jpg"  class="pull-left" alt="pers" > <img src="img/pers2.jpg"  class="pull-right" alt="pers" >Массивный корпус, ноги короткие, голова большая, круглая, уши маленькие, поставлены очень широко и покрыты густой шерстью; морда и нос короткие, щеки развиты, глаза большие, круглые, ярко-голубые. Длинная, мягкая и густая шерсть образует пышный воротник на шее. Хвост не длинный, но пропорционален по отношению к телу; пушистый. Пышная шелковистая шерсть окрашена как у сиамов. По основному окрасу шерсти и окрасу отметины на морде, ушах, лапах, а также на хвосте, у колор-пойнтов различают 20 цветовых вариаций. Главные среди них: сил-пойнт, блю-пойнт, шоколад-пойнт, лайлак-пойнт, ред-пойнт, торти-пойнт.
+       <a href="#home">           Назад         </a>
+      </div> 
+   </div>   
+
+ <div class="tbl" >
+ <table class="table table-hover table-bordered table-striped ">
+     <caption>Таблица перевода кошачьих лет жизни в соответствующий человеческий возраст </caption>
+
+      <thead>
+        <tr>
+          <th>Кошачий возраст</th>
+           <th></th>
+           <th>Возраст человека</th>
+        </tr>
+      </thead>
+      
+ <tbody>     
+    <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    </tr>
+    <tr>
+    <td>1 месяц</td>
+    <td>=</td>
+    <td>1 год 4 месяца</td>
+    </tr>
+    <tr>
+    <td>2 месяца</td>
+    <td>=</td>
+    <td>2 года 6 месяцев</td>
+    </tr>
+    <tr>
+    <td>3 месяца</td>
+    <td>=</td>
+    <td>3 года 9 месяцев</td>
+    </tr>
+    <tr>
+    <td>4 месяца</td>
+    <td>=</td>
+    <td>5 лет</td>
+    </tr>
+    <tr>
+    <td>5 месяцев</td>
+    <td>=</td>
+    <td>6 лет 4 месяца</td>
+    </tr>
+    <tr>
+    <td>6 месяцев</td>
+    <td>=</td>
+    <td>7 лет 6 месяцев</td>
+    </tr>
+    <tr>
+    <td>7 месяцев</td>
+    <td>=</td>
+    <td>8 лет 9 месяцев</td>
+    </tr>
+    <tr>
+    <td>8 месяцев</td>
+    <td>=</td>
+    <td>10 лет</td>
+    </tr>
+    <tr>
+    <td>9 месяцев</td>
+    <td>=</td>
+    <td>11 лет 8 месяцев</td>
+    </tr>
+    <tr>
+    <td>10 месяцев</td>
+    <td>=</td>
+    <td>12 лет 6 месяцев</td>
+    </tr>
+    <tr>
+    <td>11 месяцев</td>
+    <td>=</td>
+    <td>13 лет 9 месяцев</td>
+    </tr>
+    <tr>
+    <td>1 год</td>
+    <td>=</td>
+    <td>15 лет</td>
+    </tr>
+    <tr>
+    <td>2 года</td>
+    <td>=</td>
+    <td>24 года</td>
+    </tr>
+    <tr>
+    <td>3 года</td>
+    <td>=</td>
+    <td>28 лет</td>
+    </tr>
+    <tr>
+    <td>4 года</td>
+    <td>=</td>
+    <td>32 года</td>
+    </tr>
+    <tr>
+    <td>5 лет</td>
+    <td>=</td>
+    <td>36 лет</td>
+    </tr>
+    <tr>
+    <td>6 лет</td>
+    <td>=</td>
+    <td>40 лет</td>
+    </tr>
+    <tr>
+    <td>7 лет</td>
+    <td>=</td>
+    <td>44 года</td>
+    </tr>
+    <tr>
+    <td>8 лет</td>
+    <td>=</td>
+    <td>48 лет</td>
+    </tr>
+    <tr>
+    <td>9 лет</td>
+    <td>=</td>
+    <td>52 года</td>
+    </tr>
+    <tr>
+    <td>10 лет</td>
+    <td>=</td>
+    <td>56 лет</td>
+    </tr>
+    <tr>
+    <td>11 лет</td>
+    <td>=</td>
+    <td>60 лет</td>
+    </tr>
+    <tr>
+    <td>12 лет</td>
+    <td>=</td>
+    <td>64 года</td>
+    </tr>
+    <tr>
+    <td>13 лет</td>
+    <td>=</td>
+    <td>68 лет</td>
+    </tr>
+    <tr>
+    <td>14 лет</td>
+    <td>=</td>
+    <td>72 года</td>
+    </tr>
+    <tr>
+    <td>15 лет</td>
+    <td>=</td>
+    <td>74 года</td>
+    </tr>
+    <tr>
+    <td>16 лет</td>
+    <td>=</td>
+    <td>76 лет</td>
+    </tr>
+    <tr>
+    <td>17 лет</td>
+    <td>=</td>
+    <td>78 лет</td>
+    </tr>
+    <tr>
+    <td>18 лет</td>
+    <td>=</td>
+    <td>80 лет</td>
+    </tr>
+    <tr>
+    <td>19 лет</td>
+    <td>=</td>
+    <td>82 года</td>
+    </tr>
+    <tr>
+    <td>20 лет</td>
+    <td>=</td>
+    <td>84 года</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+ </section>  
+  <footer>
+  </footer>
+   </body>
+  </html>
