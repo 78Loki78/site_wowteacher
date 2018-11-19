@@ -1,4 +1,4 @@
-
+﻿
 
   <!DOCTYPE html>
   <meta charset="UTF-8">
@@ -15,114 +15,20 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  
 
    <link rel="stylesheet" type="text/css" href="css/index.css">
    </head>
    <body>
-   <!--no work>
-    <script type="text/javascript">var cup;
-var rot;
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  colorMode(HSB);
-  rot=PI/70;
-  cup=new Cup(width/2, height/2, (width+height)/12, (width+height)/200,500);
-}
-
-function draw() {
-  background(60);
-  cup.show(rot);
-  if(rot>0.01){
-    rot*=0.999;
-  }
-}
-
-function Cup(x,y,r,t,n){
-  var bubbles=[];
-  for(var i=0; i<n; i++){
-    bubbles.push(new Bubble(r));
-  }
-  
-  this.show=function(rot){
-    push();
-    translate(x,y);
-    rotate(-PI/5);
-    noStroke();
-    fill(20,80,20);
-    rect(r,-r*0.2, r, r*0.4, r*0.1);
-    ellipse(0,0,(r*1.2+t)*2);
-    fill(20,10,100);
-    ellipse(0,0,r*1.2*2);
-    fill(20,20,100);
-    ellipse(0,0,(r*1.2-t)*2);
-    fill(20,70,15);
-    ellipse(0,0,r*2);
-    for(var i=bubbles.length-1; i>=0; i--){
-      bubbles[i].show(rot);
-      if(!bubbles[i].run()){
-        bubbles.splice(i,1);
-      }
-    }
-    pop();
-  };
-}
-
-function Bubble(r){
-  var s=random(1,30)*r/2000;
-  if(random(10)<3){
-    s*=2;
-  }
-  if(random(10)<1){
-    s*=2;
-  }
-  var rB=random(0,r-s);
-  if(random(10)<3){
-    rB=r-s;
-  }
-  if(random(10)<3){
-    rB=rB/3+r*0.6;
-  }
-  if(random(10)<3){
-    rB/=3;
-  }
-  var ttl=random(20,1000);
-  var forever=random(100)<25;
-  var a=random(TWO_PI);
-  var rotSlow=(r-s-rB)<(r-s)*0.2 ? (r-s-rB)/((r-s)*0.2) :1;
-  
-  this.show=function(rot){
-    push();
-    rotate(a);
-    stroke(20,30,80,0.8);
-    strokeWeight(r*0.015);
-    fill(20,80,20,0.8);
-    ellipse(0,rB,s*2);
-    pop();
-    a+=rotSlow * rot*rB/r;
-  };
-  
-  this.run=function(){
-    if(!forever){
-      ttl--;
-    }
-    return ttl>0;
-  }
-}</script> <!--end >
-
-
-
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-my ">
      <div class="navbar-header">
       <a href="#" class="navbar-brand" style='padding:0'>
          <img src="img/logo.png" alt="logo" style="height: 100%">
       </a> 
      </div>
       <ul class='navbar-nav nav'>
-        <li class='active'> <a href="index.htm">Главная</a></li>
-        <li> <a href="about.htm">О нас</a></li>
-        <li> <a href="cats.htm">Товары</a></li>
+        <li > <a  href="#home">Начало</a></li>
+        <li> <a href="#age">Кошачий возраст</a></li>
+        <li> <a href="#eat">Как кормить?</a></li>
       </ul>
       <form action="post" class="navbar-form navbar-right">
             <div class="form-group">
@@ -134,11 +40,11 @@ function Bubble(r){
               </div>
         </div>
       </form>
-    </nav>  
-  
+     
+</nav>   
 <a name="home"></a>
-
  
+  <section class="content">     
   <div id="myslider" class="carousel slide" data-ride="carousel">
      <ol class="carousel-indicators">
         <li class="active" data-target="#myslider" data-slide-to="0" > </li>
@@ -148,25 +54,25 @@ function Bubble(r){
      </ol>        
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/slider1.jpg" alt="First slide" class="img-responsive center-block zoomdown">
+      <img src="img/slider1.jpg" alt="First slide" class="img-responsive center-block ">
       <div class="carousel.caption">
               <p class="text-center"> Прикольне фото</p>
       </div>
     </div>
     <div class="item">
-      <img src="img/slider2.jpg" alt="Second slide" class="img-responsive center-block zoomdown">
+      <img src="img/slider2.jpg" alt="Second slide" class="img-responsive center-block ">
       <div class="carousel.caption">
               <p class="text-center"> Прикольне фото</p>
       </div>
     </div>
     <div class="item">
-      <img  src="img/slider3.jpg" alt="Third slide" class="img-responsive center-block zoomdown">
+      <img  src="img/slider3.jpg" alt="Third slide" class="img-responsive center-block ">
       <div class="carousel.caption">
               <p class="text-center"> Прикольне фото</p>
       </div>
     </div>
     <div class="item">
-      <img  src="img/slider4.jpg" alt="Third slide" class="img-responsive center-block zoomdown">
+      <img  src="img/slider4.jpg" alt="Third slide" class="img-responsive center-block ">
       <div class="carousel.caption">
               <p class="text-center"> Прикольне фото</p>
       </div>
@@ -182,8 +88,7 @@ function Bubble(r){
 </div>
 
 
-
-  <section class="content"> 
+ 
   <div class="row"> 
   <article class='col-lg-3 col-md-4' >
       <div class="img_article"> 
@@ -260,7 +165,7 @@ function Bubble(r){
    <div class="fulltext">
     <a name="abissin"></a>
      <div class="box">
-     <img src="img/abissin1.jpg"  class="pull-left "" alt="abissin" > <img src="img/abissin2.jpg"  class="pull-right " alt="abissin" >
+     <img src="img/abissin1.jpg"  class="pull-left" alt="abissin" > <img src="img/abissin2.jpg"  class="pull-right" alt="abissin" >
        Шерсть короткая, тонкая, плотно прилегает к коже. Окрас разнообразный, но чаще встречается красно-коричневый с черным или темно-коричневым типпингом, темно-красный, голубой, бежево-желтый. Предпочтительно, чтобы отдельные волоски были двух- или даже трехцветными. Четкие полосы, кольца и белые отметины не допускаются (кроме подбородка). Голова небольшая, клиновидной формы, с сильным подбородком. Нос прямой, средней длины. Переход от лба к морде слабо заметен (без «стопа»). Уши сравнительно крупные, вертикально поставленные, с широким основанием и закругленными концами с кисточкой волос. Брови темные. Глаза большие, выразительные, миндалевидные, обычно зеленые, желтые или цвета лесного ореха. Селекционеры утверждают, что цвет глаз у этих животных меняется в зависимости от физического и нервного состояния. Тело крепкое, мускулистое, гибкое, подобранное. Шея короткая, изящная, элегантно изогнутая. Спина мощная, развитая, грудь широкая и достаточно глубокая. Ноги жилистые, крепкие, средние или длинные. Лапы маленькие, овальные. Животное стоит как бы «на цыпочках». Хвост относительно длинный, суживающийся от основания к концу.   <a href="#home">           Назад         </a>
       </div>
       <div class="box">
@@ -277,8 +182,9 @@ function Bubble(r){
       </div>
       <div class="box">
       <a name="pers"></a>
-       <img src="img/pers1.jpg"  class="pull-left" alt="pers" > <img src="img/pers2.jpg"  class="pull-right" alt="pers" >Массивный корпус, ноги короткие, голова большая, круглая, уши маленькие, поставлены очень широко и покрыты густой шерстью; морда и нос короткие, щеки развиты, глаза большие, круглые, ярко-голубые. Длинная, мягкая и густая шерсть образует пышный воротник на шее. Хвост не длинный, но пропорционален по отношению к телу; пушистый. Пышная шелковистая шерсть окрашена как у сиамов. По основному окрасу шерсти и окрасу отметины на морде, ушах, лапах, а также на хвосте, у колор-пойнтов различают 20 цветовых вариаций. Главные среди них: сил-пойнт, блю-пойнт, шоколад-пойнт, лайлак-пойнт, ред-пойнт, торти-пойнт.
+       <img src="img/pers1.jpg"  class="pull-left" alt="pers" > <img src="img/pers2.jpg"  class="pull-right" alt="pers" >Массивный корпус, ноги короткие, голова большая, круглая, уши маленькие, поставлены очень широко и покрыты густой шерстью; морда и нос короткие, щеки развиты, глаза большие, круглые, ярко-голубые. Длинная, мягкая и густая шерсть образует пышный воротник на шее. Хвост не длинный, но пропорционален по отношению к телу; пушистый. Пышная шелковистая шерсть окрашена как у сиамов. По основному окрасу шерсти и окрасу отметины на морде, ушах, лапах, а также на хвосте, у колор-пойнтов различают 20 цветовых вариаций. Главные среди них: сил-пойнт, блю-пойнт, шоколад-пойнт, лайлак-пойнт, ред-пойнт, торти-пойнт.<a name="age"></a>
        <a href="#home">           Назад         </a>
+
       </div> 
    </div>   
 
@@ -454,12 +360,27 @@ function Bubble(r){
     <td>20 лет</td>
     <td>=</td>
     <td>84 года</td>
-    </tr>
+    </tr> 
   </tbody>
 </table>
 </div>
- </section>  
-  <footer>
+  
+  <div class="fulltext"><p><a name="eat"></a>Cтоит<img src="img/meat.jpg"  class="pull-left" alt="meat" > заметить, что кошки изначально дикие животные, поэтому корм их должен быть предпочтительно их натуральных продуктов. Это может быть и сырое мясо, только нежирное (жирная вообще очень вредна для животных), а именно курица, индюшка, говядина. Также рыбные продукты, но тоже нежирные. Лучше всего, конечно, морская рыба, кальмары. Запомните, что рыба не должна быть основным продуктом, ее можно давать только 2, а максимум 3 раза в неделю, иначе она пойдет во вред. Также нужно давать кошкам яйцо, в основном желток, хоть в вареном, хоть в сыром виде, примерно раз в неделю.</p>
+
+  <p><img src="img/korm.jpg"  class="pull-right" alt="korm" >Многие при кормлении используют субпродукты. Лучше всего для этих целей подходит, конечно, рубец. Ведь вместе с ним в организм кошки поступают и необходимые микроорганизмы для работы желудочно-кишечного тракта. Также полезна печень, но ее нельзя давать сырой, нужно проварить хотя бы в течении 5 минут во избежание заражения гельминтами. Интересно, что многие кошки отказываются, или неохотно едят мясо кролика и барашка. Еще столько всего непознанного в наших любимцах!</p>
+
+  <p><img src="img/submeat.jpg"  class="pull-left" alt="submeat" >Можно, конечно, для кормления использовать и специализированные сухие и мокрые корма, но нужно тщательно подойти к выбору фирмы-производителю и удостовериться в качестве продукта. Заметьте, что кормить кошку исключительно сухим кормом нельзя, такой корм для кошек равно как и корм для собак может быть добавкой или лакомством. По всем вопросам питания лучше посоветоваться с квалифицированным ветеринаром, которые подберет соотношение белков-жиров-углеводов-витаминов-микроэлементов именно для вашей кошки учитывая ее породу, возраст, особенности содержания и характера.</p>
+
+  <p><img src="img/sup.jpg"  class="pull-right" alt="sup" >Можно постепенно приучать кошек к супу, только бульон в них доже ныть нежирным. Суп подходит с любой крупой (гречка, ячневая, овсянка, пшеничка, рис). С рисовой крупой нужно быть осторожными, потому что она может вызвать задержку кала у кошек, к чему они имеют предрасположенность. В этом случае советуют отваривать рис на молоке.<br>
+
+  В любом случае, рацион питания кошек должен быть разнообразным, содержать все необходимые макро и микроэлементы в достаточном количестве. Только при этом условии ваша кошка будет красивой, активной, а главное, здоровой. Запомните, что большинство болезней развиваются от плохого питания и условий содержания.</p>  
+  </section> 
+  <footer id="footer" class="footer navbar-fixed-bottom">
+
+    
+      <p>Сайт разработан в рамках обучающего проекта WOW teachers. Автор Гладкий Виталий
+      <i>E-mail: compteach019@gmail.com</i></p>
+    
   </footer>
    </body>
   </html>
